@@ -30,3 +30,7 @@ cd R-$RVERSION
 ./configure --with-blas="${MKL}" --with-lapack --with-aqua --with-system-zlib --enable-memory-profiling --enable-R-framework --x-includes=/opt/X11/include --x-libraries=/opt/X11/lib --with-tcltk=/usr/local/lib
 make
 sudo make install
+
+# now fix up the bad arch detection:
+sed -i '' 's/R_ARCH\=\/\`arch\`/R_ARCH\=\/x86_64/g' /Library/Frameworks/R.framework/Versions/Current/Resources/bin/R
+
