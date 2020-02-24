@@ -23,6 +23,10 @@ export FCFLAGS='-g -O2'
 export F77FLAGS='-g -O2'
 export PKG_CONFIG_PATH=/opt/X11/lib/pkgconfig:/usr/local/lib/pkgconfig:/usr/lib/pkgconfig
 
+curl -O https://cran.r-project.org/src/base/R-3/R-$RVERSION.tar.gz
+tar xf R-$RVERSION.tar.gz
+cd R-$RVERSION
+
 ./configure --with-blas="${MKL}" --with-lapack --with-aqua --with-system-zlib --enable-memory-profiling --enable-R-framework --x-includes=/opt/X11/include --x-libraries=/opt/X11/lib --with-tcltk=/usr/local/lib
 make
 sudo make install
