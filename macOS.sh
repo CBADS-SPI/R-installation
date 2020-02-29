@@ -7,7 +7,7 @@
 # * X11 https://www.xquartz.org/ 
 # * XCode / command line developer tools for macOS (installing homebrew will install these)
 
-RVERSION=3.6.2
+RVERSION=3.6.3
 export MKLROOT="/opt/intel/mkl"
 export MKL=" -L${MKLROOT}/lib ${MKLROOT}/lib/libmkl_blas95_ilp64.a ${MKLROOT}/lib/libmkl_lapack95_ilp64.a -lmkl_intel_ilp64 -lmkl_intel_thread -lmkl_core -liomp5 -lpthread -lm -lmkl_gf_ilp64"
 export arch=x86_64
