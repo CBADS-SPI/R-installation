@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
-RVERSION=3.6.3
-MKLVERSION=2020.0-088
+RVERSION=4.0.0
+MKLVERSION=2020.1-102 
 
 curl https://apt.repos.intel.com/intel-gpg-keys/GPG-PUB-KEY-INTEL-SW-PRODUCTS-2019.PUB | sudo apt-key add -
 sudo sh -c 'echo deb https://apt.repos.intel.com/mkl all main > /etc/apt/sources.list.d/intel-mkl.list'
@@ -23,7 +23,7 @@ sudo ldconfig
 [ -f /opt/intel/mkl/bin/mklvars.sh ]  && export MKL="-Wl,--no-as-needed -lmkl_gf_lp64 -Wl,--start-group -lmkl_gnu_thread  -lmkl_core  -Wl,--end-group -fopenmp  -ldl -lpthread -lm"
 sudo apt-get -y install build-essential g++ gfortran bzip2 libbz2-dev xorg-dev liblzma-dev libreadline-dev libpcre++-dev libcurl4-openssl-dev libpango1.0-dev
  
-curl -O https://cran.r-project.org/src/base/R-3/R-$RVERSION.tar.gz
+curl -O https://cran.r-project.org/src/base/R-4/R-$RVERSION.tar.gz
 
 tar xf R-$RVERSION.tar.gz
 cd R-$RVERSION
