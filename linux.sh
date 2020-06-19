@@ -21,7 +21,7 @@ sudo ldconfig
 
 [ -f /opt/intel/mkl/bin/mklvars.sh ]  && source /opt/intel/mkl/bin/mklvars.sh intel64
 [ -f /opt/intel/mkl/bin/mklvars.sh ]  && export MKL="-Wl,--no-as-needed -lmkl_gf_lp64 -Wl,--start-group -lmkl_gnu_thread  -lmkl_core  -Wl,--end-group -fopenmp  -ldl -lpthread -lm"
-sudo apt-get -y install build-essential g++ gfortran bzip2 libbz2-dev xorg-dev liblzma-dev libreadline-dev libpcre++-dev libcurl4-openssl-dev libpango1.0-dev libjpeg9-dev libcairo2-dev
+sudo apt-get -y install build-essential g++ gfortran bzip2 libbz2-dev xorg-dev liblzma-dev libreadline-dev libpcre2-dev libpcre++-dev libcurl4-openssl-dev libpango1.0-dev libjpeg9-dev libcairo2-dev
  
 curl -O https://cran.r-project.org/src/base/R-4/R-$RVERSION.tar.gz
 
