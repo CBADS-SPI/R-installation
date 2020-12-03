@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 RVERSION=4.0.3
-MKLVERSION=2020.3-111 
+MKLVERSION=2020.4-912 
 
 curl https://apt.repos.intel.com/intel-gpg-keys/GPG-PUB-KEY-INTEL-SW-PRODUCTS-2019.PUB | sudo apt-key add -
 sudo sh -c 'echo deb https://apt.repos.intel.com/mkl all main > /etc/apt/sources.list.d/intel-mkl.list'
