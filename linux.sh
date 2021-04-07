@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-RVERSION=4.0.4
+RVERSION=4.0.5
 MKLVERSION=2020.4-912 
 
 curl https://apt.repos.intel.com/intel-gpg-keys/GPG-PUB-KEY-INTEL-SW-PRODUCTS-2019.PUB | sudo apt-key add -
