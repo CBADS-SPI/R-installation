@@ -1,0 +1,12 @@
+# macOS Makevars configuration for OpenMP support with R v4.0.x
+
+SHLIB_OPENMP_CFLAGS=-Xpreprocessor -fopenmp
+SHLIB_OPENMP_CXXFLAGS=-Xpreprocessor -fopenmp
+SHLIB_OPENMP_FCFLAGS=-Xpreprocessor -fopenmp
+SHLIB_OPENMP_FFLAGS=-Xpreprocessor -fopenmp
+
+FC=$(GCCBASE)/bin/gfortran
+F77=$(GCCBASE)/bin/gfortran
+FLIBS=-L$(GCCBASE)/lib/gcc/${GCCVERSION}/ -lm -lgfortran
+
+LDFLAGS=-L/usr/local/opt/libomp/lib -lomp
