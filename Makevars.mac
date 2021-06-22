@@ -10,3 +10,4 @@ F77=/usr/local/bin/gfortran
 FLIBS=-L/usr/local/lib/gcc/11/ -lm -lgfortran
 
 LDFLAGS=-L/usr/local/opt/libomp/lib -lomp
+JAVA_HOME=/usr/local/opt/java
