@@ -5,8 +5,8 @@ SHLIB_OPENMP_CXXFLAGS=-Xpreprocessor -fopenmp
 SHLIB_OPENMP_FCFLAGS=-Xpreprocessor -fopenmp
 SHLIB_OPENMP_FFLAGS=-Xpreprocessor -fopenmp
 
-FC=$(GCCBASE)/bin/gfortran
-F77=$(GCCBASE)/bin/gfortran
-FLIBS=-L$(GCCBASE)/lib/gcc/${GCCVERSION}/ -lm -lgfortran
+FC=/usr/local/bin/gfortran
+F77=/usr/local/bin/gfortran
+FLIBS=-L/usr/local/lib/gcc/11/ -lm -lgfortran
 
 LDFLAGS=-L/usr/local/opt/libomp/lib -lomp
