@@ -14,3 +14,5 @@ brew install CBADS-SPI/homebrew-r-srf/r --with-openblas --with-openjdk --with-tc
 sudo mkdir -p /Library/Frameworks/R.framework/Versions/Current/Resources/lib/
 cd /Library/Frameworks/R.framework/Versions/Current/Resources/lib/
 sudo ln -s /usr/local/lib/R/lib/libR.dylib
+mkdir -p ~/.R
+cp -r Makevars.mac ~/.Makevars
